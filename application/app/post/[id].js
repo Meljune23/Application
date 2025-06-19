@@ -68,7 +68,7 @@ export default function PostDetail() {
 				<Text style={styles.author}>By: {post.author}</Text>
 
 				<View style={styles.button}>
-					<Button title={`❤️ Like (${post.likes.length})`} onPress={like} color="#D55" />
+					<Button title={`❤️ Like (${post.likes.length})`} onPress={like} color="#DD5555" />
 				</View>
 
 				<TextInput
@@ -76,11 +76,11 @@ export default function PostDetail() {
 					value={comment}
 					onChangeText={setComment}
 					style={styles.input}
-					placeholderTextColor="#777"
+					placeholderTextColor="#777777"
 				/>
 
 				<View style={styles.button}>
-					<Button title="Add Comment" onPress={addComment} color="#55D" />
+					<Button title="Add Comment" onPress={addComment} color="#5555DD" />
 				</View>
 
 				<Text style={styles.commentHeader}>Comments:</Text>
@@ -101,9 +101,9 @@ const COLORS = {
 	bg: '#121212',
 	card: '#1f1f1f',
 	text: '#f1f1f1',
-	subtle: '#999',
-	primary: '#0ff',
-	accent: '#f55',
+	subtle: '#999999',
+	primary: '#00ffff',
+	accent: '#ff5555',
 	border: '#2a2a2a',
 };
 

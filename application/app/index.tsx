@@ -51,10 +51,10 @@ export default function Home() {
 					Welcome Back, {user?.username || 'Guest'}
 				</Text>
 				<TouchableOpacity
-					style={[styles.neonBtn, { backgroundColor: '#f55' }]}
+					style={[styles.neonBtn, { backgroundColor: '#ff5555' }]}
 					onPress={logoutt}
 				>
-					<Text style={[styles.neonText, { textShadowColor: '#f55' }]}>Logout</Text>
+					<Text style={[styles.neonText, { textShadowColor: '#ff5555' }]}>Logout</Text>
 				</TouchableOpacity>
 			</View>
 
@@ -81,9 +81,9 @@ const COLORS = {
 	bg: '#121212',
 	card: '#1f1f1f',
 	text: '#f1f1f1',
-	subtle: '#999',
-	primary: '#0ff',
-	accent: '#f55',
+	subtle: '#999999',
+	primary: '#00ffff',
+	accent: '#ff5555',
 	border: '#2a2a2a',
 }
 

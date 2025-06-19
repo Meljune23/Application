@@ -37,14 +37,14 @@ export default function Register() {
 				<Text style={styles.title}>Register</Text>
 				<TextInput
 					placeholder="Username"
-					placeholderTextColor="#999"
+					placeholderTextColor="#999999"
 					style={styles.input}
 					onChangeText={setUsername}
 					value={username}
 				/>
 				<TextInput
 					placeholder="Password"
-					placeholderTextColor="#999"
+					placeholderTextColor="#999999"
 					secureTextEntry
 					style={styles.input}
 					onChangeText={setPassword}
@@ -54,10 +54,10 @@ export default function Register() {
 					<Text style={styles.neonText}>Register</Text>
 				</TouchableOpacity>
 				<TouchableOpacity
-					style={[styles.neonBtn, { backgroundColor: '#f0f' }]}
+					style={[styles.neonBtn, { backgroundColor: '#ff00ff' }]}
 					onPress={() => router.replace('/login')}
 				>
-					<Text style={[styles.neonText, { textShadowColor: '#f0f' }]}>
+					<Text style={[styles.neonText, { textShadowColor: '#ff00ff' }]}>
 						Back to Login
 					</Text>
 				</TouchableOpacity>
@@ -72,9 +72,9 @@ const COLORS = {
 	bg: '#121212',
 	card: '#1f1f1f',
 	text: '#f1f1f1',
-	primary: '#0ff',
+	primary: '#00ffff',
 	border: '#2a2a2a',
-	subtle: '#888',
+	subtle: '#888888',
 }
 
 const styles = StyleSheet.create({
@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
 		elevation: 10,
 	},
 	neonText: {
-		color: '#000',
+		color: '#000000',
 		fontSize: 16,
 		fontWeight: '700',
 		textShadowColor: COLORS.primary,

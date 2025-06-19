@@ -43,14 +43,14 @@ export default function Login() {
 				<TextInput
 					style={styles.input}
 					placeholder="Username"
-					placeholderTextColor="#999"
+					placeholderTextColor="#999999"
 					value={username}
 					onChangeText={setUsername}
 				/>
 				<TextInput
 					style={styles.input}
 					placeholder="Password"
-					placeholderTextColor="#999"
+					placeholderTextColor="#999999"
 					secureTextEntry
 					value={password}
 					onChangeText={setPassword}
@@ -61,10 +61,10 @@ export default function Login() {
 				</TouchableOpacity>
 
 				<TouchableOpacity
-					style={[styles.neonBtn, { backgroundColor: '#f0f' }]}
+					style={[styles.neonBtn, { backgroundColor: '#ff00ff' }]}
 					onPress={() => router.push('/register')}
 				>
-					<Text style={[styles.neonText, { textShadowColor: '#f0f' }]}>
+					<Text style={[styles.neonText, { textShadowColor: '#ff00ff' }]}>
 						Register Instead
 					</Text>
 				</TouchableOpacity>
@@ -79,8 +79,8 @@ const COLORS = {
 	bg: '#121212',
 	card: '#1f1f1f',
 	text: '#f1f1f1',
-	subtle: '#888',
-	primary: '#0ff',
+	subtle: '#888888',
+	primary: '#00ffff',
 	border: '#2a2a2a',
 }
 
@@ -135,7 +135,7 @@ const styles = StyleSheet.create({
 		elevation: 10,
 	},
 	neonText: {
-		color: '#000',
+		color: '#000000',
 		fontSize: 16,
 		fontWeight: '700',
 		textShadowColor: COLORS.primary,

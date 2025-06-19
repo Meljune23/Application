@@ -60,14 +60,14 @@ export default function CreatePost() {
 			<View style={styles.card}>
 				<TextInput
 					placeholder="Post Title"
-					placeholderTextColor="#999"
+					placeholderTextColor="#999999"
 					value={title}
 					onChangeText={setTitle}
 					style={styles.input}
 				/>
 				<TextInput
 					placeholder="Write something..."
-					placeholderTextColor="#999"
+					placeholderTextColor="#999999"
 					value={content}
 					onChangeText={setContent}
 					style={[styles.input, styles.textArea]}
@@ -90,7 +90,7 @@ const COLORS = {
 	text: '#f1f1f1',
 	primary: '#0ff',
 	border: '#2a2a2a',
-	subtle: '#888',
+	subtle: '#888888',
 }
 
 const styles = StyleSheet.create({
@@ -137,7 +137,7 @@ const styles = StyleSheet.create({
 		elevation: 10,
 	},
 	neonText: {
-		color: '#000',
+		color: '#000000',
 		fontSize: 16,
 		fontWeight: '700',
 		textShadowColor: COLORS.primary,
